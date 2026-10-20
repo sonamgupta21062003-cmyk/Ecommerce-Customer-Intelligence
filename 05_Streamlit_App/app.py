@@ -15,7 +15,7 @@ import streamlit as st
 # ==========================================================
 
 st.set_page_config(
-    page_title="E-Commerce Customer Intelligence",
+    page_title="S.G's E-Commerce Customer Intelligence",
     page_icon="🛍️",
     layout="wide",
     initial_sidebar_state="expanded",
