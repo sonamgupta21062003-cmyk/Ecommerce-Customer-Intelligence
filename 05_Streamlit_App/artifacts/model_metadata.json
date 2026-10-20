@@ -1,0 +1,14 @@
+{
+  "target": "Profit",
+  "features": [
+    "Quantity",
+    "UnitPrice",
+    "DiscountPct",
+    "Category",
+    "Region",
+    "PaymentMethod"
+  ],
+  "training_rows": 10046,
+  "test_rows": 2512,
+  "random_state": 42
+}

@@ -1,0 +1,1 @@
+OrderID,OrderDate,CustomerID,PaymentMethod,OrderStatus,CustomerName,Gender,Age,City,Region,SignupDate,OrderDetailID,ProductID,Quantity,UnitPrice,DiscountPct,SalesAmount,Profit,ProductName,Category,CostPrice,SellingPrice,Year,Month,Monthname,Year Name,profitmarginPct,ExpectedSales,ExpectedProfit,SalesDifference,ProfitDifference
