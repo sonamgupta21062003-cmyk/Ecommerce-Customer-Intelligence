@@ -206,7 +206,7 @@ Python serves as the analytical foundation of this project, enabling data prepar
 
 - 🔗 **Analytics Integration** — Prepare analytical outputs and model artifacts for integration with the Power BI dashboard and Streamlit application.
 
-### 🧰 Python Libraries & Tools
+###  Python Libraries & Tools
 
 ![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
 ![Pandas](https://img.shields.io/badge/Pandas-150458?style=for-the-badge&logo=pandas&logoColor=white)
@@ -215,7 +215,7 @@ Python serves as the analytical foundation of this project, enabling data prepar
 ![Jupyter](https://img.shields.io/badge/Jupyter-F37626?style=for-the-badge&logo=jupyter&logoColor=white)
 ![Plotly](https://img.shields.io/badge/Plotly-3F4F75?style=for-the-badge&logo=plotly&logoColor=white)
 
-### 📂 Python Analysis Files
+###  Python Analysis Files
 
 | File | Purpose |
 |---|---|
@@ -224,26 +224,89 @@ Python serves as the analytical foundation of this project, enabling data prepar
 | `hypothesis testing.ipynb` | Statistical hypothesis testing |
 | `04_Python/` | Python analysis and machine learning workflows |
 
-### 💡 Business Value
+### EDA 
+## Heading: Sales Amount Distribution
+
+
+<img width="1077" height="587" alt="image" src="https://github.com/user-attachments/assets/d532610e-8c1b-4317-af3a-85b3dca6819d" />
+
+
+
+## Insights:
+1. Right-Skewed Distribution: Sales amounts are positively skewed, indicating that lower-value transactions occur more frequently than higher-value transactions.
+2. Highest Frequency: Most transactions are concentrated in the approximate sales range of 5,000–10,000.
+3. Declining Frequency: As sales amount increases, the number of transactions gradually decreases.
+4. High-Value Transactions: Transactions above 30,000 occur relatively less frequently.
+5. Long-Tail Pattern: A small number of transactions extend beyond 50,000, representing relatively high-value sales.
+Key Business Takeaway: The business generates most of its transactions from lower-to-mid-value sales, while high-value transactions contribute a smaller share of transaction volume.
+
+Note: These are visual observations from the histogram; exact percentages and average sales require the underlying data.
+
+## 2 Profit Distribution Analysis
+
+<img width="1073" height="592" alt="image" src="https://github.com/user-attachments/assets/3d0bb9fa-b8e2-49ce-bfd6-442a8186eeb2" />
+
+## Insights:
+1. Right-Skewed Distribution: Profit values are positively skewed, with most transactions generating relatively low profits.
+2. Highest Frequency: The majority of transactions are concentrated in the approximate profit range of 1,000–3,000.
+3. Declining Frequency: Transaction frequency decreases as profit increases.
+4. High-Profit Transactions: Transactions generating profits above 10,000 are relatively uncommon.
+5. Long-Tail Distribution: A small number of transactions generate profits exceeding 20,000, with a few reaching around 30,000.
+Key Business Takeaway: Most transactions generate modest profits, while only a small proportion contribute exceptionally high profits. Identifying the products and categories behind these high-profit transactions can help improve profitability.
+
+## 3 Heading: Monthly Revenue Trend Analysis
+
+<img width="1400" height="588" alt="image" src="https://github.com/user-attachments/assets/d3795b87-34fb-4b22-ad52-fc26a9ce8113" />
+
+## Insights:
+1. Fluctuating Revenue: Revenue shows significant month-to-month variations.
+2. Highest Revenue: July 2024 recorded the highest revenue.
+3. Lowest Revenue: February 2025 and February 2026 show major revenue drops.
+4. Recent Growth: Revenue increased strongly from May to July 2026.
+Key Takeaway: Revenue is inconsistent, highlighting the need to understand seasonal patterns and factors behind monthly fluctuations.
+
+## 4 Heading: Sales Amount Outlier Analysis
+
+<img width="652" height="566" alt="image" src="https://github.com/user-attachments/assets/fef9b5fc-9685-45de-a35a-7afb1b4cb350" />
+
+## Insights:
+1. Positive Skewness: Sales amounts are concentrated in the lower range.
+2. Median Sales: The median is approximately 11,000.
+3. High-Value Outliers: Several transactions exceed 41,000.
+4. Unusual Transactions: A few exceptionally large sales may significantly influence overall revenue.
+Key Takeaway: Investigate high-value transactions to understand whether they represent genuine large orders or unusual data points.
+
+## 5 Heading: Top 10 Products by Revenue
+
+<img width="1238" height="736" alt="image" src="https://github.com/user-attachments/assets/3a9348c2-d4bb-4eff-a430-d3f389ec6e1c" />
+
+
+## Insights:
+1. Top Performer: Bedsheet generates the highest revenue.
+2. Strong Performers: Power Bank and Hair Dryer rank second and third.
+3. Revenue Leaders: Home and electronic products dominate the top positions.
+4. Competitive Performance: Revenue among the top 10 products is relatively close.
+Key Takeaway: Focus on the top revenue-generating products to identify opportunities for inventory planning, promotions, and business growth.
+###  Business Value
 
 Python connects data analysis with predictive analytics, helping transform raw e-commerce data into meaningful business insights and supporting profit estimation through a reusable machine learning pipeline.
 
 ### ML Algorothm Overview
 
-## 🤖 Machine Learning & Profit Prediction
+##  Machine Learning & Profit Prediction
 
 This project integrates Machine Learning into e-commerce analytics to estimate product-level profit and support data-driven business decisions. A trained prediction pipeline is saved for reuse within the interactive Streamlit application.
 
-### 🎯 Machine Learning Objectives
+###  Machine Learning Objectives
 
-- 💰 **Profit Prediction** — Estimate profit using the input features supported by the trained model.
-- ⚙️ **Data Preprocessing** — Prepare input features in the format required by the prediction pipeline.
-- 🧠 **Predictive Modeling** — Train a regression model to learn patterns between input variables and numerical profit values.
-- 📊 **Model Evaluation** — Evaluate predictive performance using appropriate regression metrics.
-- 📦 **Model Persistence** — Save the trained pipeline using Joblib for reuse without retraining every time the application runs.
-- 🌐 **Application Integration** — Connect the trained model with Streamlit to make profit predictions accessible through an interactive interface.
+-  **Profit Prediction** — Estimate profit using the input features supported by the trained model.
+-  **Data Preprocessing** — Prepare input features in the format required by the prediction pipeline.
+-  **Predictive Modeling** — Train a regression model to learn patterns between input variables and numerical profit values.
+-  **Model Evaluation** — Evaluate predictive performance using appropriate regression metrics.
+-  **Model Persistence** — Save the trained pipeline using Joblib for reuse without retraining every time the application runs.
+-  **Application Integration** — Connect the trained model with Streamlit to make profit predictions accessible through an interactive interface.
 
-### 🔬 Machine Learning Workflow
+###  Machine Learning Workflow
 
 ```text
 Raw E-commerce Data
@@ -272,6 +335,18 @@ Streamlit Profit Prediction
 The objective is to predict a continuous numerical value: profit.
 
 The exact algorithm should be documented according to the model stored in the trained pipeline.
+
+## Machine Learning Pipeline Architecture
+<img width="602" height="297" alt="image" src="https://github.com/user-attachments/assets/fb0480d0-aa4c-41bd-8cb3-1fc472d4b9e2" />
+
+
+## Insights:
+1. Preprocessing: Uses ColumnTransformer to handle numerical and categorical features separately.
+2. Missing Values: SimpleImputer fills missing values in both feature types.
+3. Categorical Encoding: OneHotEncoder converts categorical data into numerical format.
+4. Model Training: RandomForestRegressor is used for profit prediction.
+5. Integrated Workflow: Combines preprocessing and model training into a single ML pipeline.
+Key Takeaway: The pipeline ensures consistent data preprocessing and prediction through an integrated machine learning workflow.
 
 ###  Model Evaluation
 
@@ -306,6 +381,7 @@ The E-Commerce Customer Intelligence project is designed to combine data analyti
 - **Visualization Layer:** Power BI dashboard for interactive business reporting.
 - **Machine Learning Layer:** Trained pipeline for profit prediction.
 - **Application Layer:** Streamlit interface for interactive exploration and predictions.
+###  Live App - https://ecommerce-customer-intelligence-cgc9fvtmv286vjhdcfz7bk.streamlit.app/
 
 ###  Run Locally
 
